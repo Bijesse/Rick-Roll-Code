@@ -74,7 +74,7 @@ var library =
           ],
         },
         "twenty_tens":{
-          Adele:[
+          "Adele":[
             {
               "album": "21",
               "song": "Rolling in the Deep",
