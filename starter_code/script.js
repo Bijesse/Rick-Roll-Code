@@ -15,21 +15,19 @@ $("#submitButton").click(function()
     var artistSelection = $("#dropDown").val();
     console.log(artistSelection);
     
-    if (artistSelection === "Michael_Jackson")
-    {
-        var jackoLen = library.music.eighties.Michael_Jackson.length;
+        var jackoLen = library.music.eighties[artistSelection].length;
         console.log(jackoLen);
         var i = 0;
-        for (; i < jackoLen; i ++)
+        for (i; i < jackoLen; i ++)
         {
         //$("#outputForm").append(library.music.eighties.Michael_Jackson[0].song);
-        console.log(library.music.eighties.Michael_Jackson[i].song);
-        $("#outputForm").append('<br>' + library.music.eighties.Michael_Jackson[i].song + '</br>');
+        console.log(library.music.eighties[artistSelection][i].song);
+        $("#outputForm").append('<br>' + library.music.eighties[artistSelection][i].song + '</br>');
         }
             
            // $("#outputForm").html(library.music.eighties.Michael_Jackson)
            // );
-    }
+    
     
     
     //$("#outputForm").html(artistSelection);
